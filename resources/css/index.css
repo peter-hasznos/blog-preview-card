@@ -4,6 +4,9 @@
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
     --blue: hsl(228, 45%, 44%);
+    --mobileSmallFS: 12px;
+    --mobileMediumFS: 14px;
+    --mobileLargeFS: 20px
 }
 
 
@@ -21,7 +24,7 @@ body {
 
 article {
     background-color: var(--white);
-    width: 357px;
+    width: 384px;
     padding: 24px;
     border-radius: 10px;
     border: 1px solid var(--black);
@@ -65,6 +68,7 @@ article .illustration {
 
 .content p:last-child {
     color: var(--grey);
+    font-size: 1rem;
 }
 
 .author {
@@ -90,4 +94,19 @@ article .illustration {
     color: var(--blue)
 }
 
-
+@media (max-width: 430px) {
+    article {
+        width: 327px;
+        margin-right: 24px;
+        margin-left: 24px;
+    }
+    .content {
+        font-size: var(--mobileSmallFS);
+    }
+    .content p{
+        font-size: var(--mobileMediumFS);
+    }
+    .content h1{
+        font-size: var(--mobileLargeFS);
+    }
+}
