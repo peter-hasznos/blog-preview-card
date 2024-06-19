@@ -27,7 +27,7 @@ article {
     width: 384px;
     padding: 24px;
     border-radius: 10px;
-    border: 1px solid var(--black);
+    outline: 1px solid var(--black);
     box-shadow: var(--black) 8px 8px;
 }
 article .illustration {
@@ -103,7 +103,7 @@ article .illustration {
     .content {
         font-size: var(--mobileSmallFS);
     }
-    .content p{
+    .content p:last-child{
         font-size: var(--mobileMediumFS);
     }
     .content h1{
