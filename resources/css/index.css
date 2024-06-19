@@ -4,9 +4,12 @@
     --grey: hsl(0, 0%, 50%);
     --black: hsl(0, 0%, 7%);
     --blue: hsl(228, 45%, 44%);
-    --mobileSmallFS: 12px;
-    --mobileMediumFS: 14px;
-    --mobileLargeFS: 20px
+    --smallFS: 0.875rem;
+    --mediumFS: 1rem;
+    --largeFS: 1.5rem;
+    --mobileSmallFS: 0.75rem;
+    --mobileMediumFS: 0.875rem;
+    --mobileLargeFS: 1.25rem;
 }
 
 
@@ -51,14 +54,14 @@ article .illustration {
 }
 
 .content, .author {
-    font-size: 0.875rem;
+    font-size: var(--smallFS);
     font-weight: 500;
     line-height: 1.5;
 }
 
 .content h1{
     cursor: pointer;
-    font-size: 1.5rem;
+    font-size: var(--largeFS);
     font-weight: 800;
 }
 .content h1:active {
@@ -68,7 +71,7 @@ article .illustration {
 
 .content p:last-child {
     color: var(--grey);
-    font-size: 1rem;
+    font-size: var(--mediumFS);
 }
 
 .author {
@@ -103,7 +106,7 @@ article .illustration {
     .content {
         font-size: var(--mobileSmallFS);
     }
-    .content p:last-child{
+    .content p:last-child {
         font-size: var(--mobileMediumFS);
     }
     .content h1{
